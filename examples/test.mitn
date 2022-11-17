@@ -1,0 +1,27 @@
+
+# This is a test function
+fn load2add : i32 =
+    mut i32 x = load2add.0
+    mut i32 y = load2add.1
+    ret x + y
+nf
+
+fn loopTest : nil =
+    mut i32 i = 0
+    whl i < 10 =
+        print i
+    lhw
+nf
+
+fn pickLesser : i32 =
+    if pickLesser.0 < pickLesser.1 =
+        ret pickLesser.0
+    ret pickLesser.1
+nf
+
+# load2add.0 = 5
+# load2add.1 = 10
+call load2add {5, 10}
+print load2add.result
+
+mut str word = 'It\'s to the world!'
